@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as mp
+t=np.arange(0,15,0.02)
+x1=np.sin(2*t*np.pi)
+mp.subplot(1,2,1)
+mp.plot(t,x1)
+mp.title('sine wave')
+mp.xlabel('time')
+mp.ylabel('amplitude')
+x2=np.cos(2*t*np.pi)
+mp.subplot(1,2,2)
+mp.plot(t,x2)
+mp.title('cos wave')
+mp.xlabel('time')
+mp.ylabel('amplitude')
+mp.show( )
